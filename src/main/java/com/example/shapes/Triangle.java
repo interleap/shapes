@@ -12,10 +12,12 @@ public class Triangle implements Shape{
         this.sideC = sideC;
     }
 
-    public Triangle(double base, double equalSide){
-        this.sideA = base;
-        this.sideB = equalSide;
-        this.sideC = equalSide;
+    public static Triangle createIsoscelesTriangle(double base, double equalSide){
+        return new Triangle(base, equalSide, equalSide);
+    }
+
+    public static Triangle createRightAngledTriangle(double base, double height){
+        return new Triangle(base, height, Math.sqrt(base * base + height * height));
     }
 
     private double perimeter() {
