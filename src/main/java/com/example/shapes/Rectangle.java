@@ -1,6 +1,6 @@
 package com.example.shapes;
 
-public class Rectangle {
+public class Rectangle implements Shape{
 
     private final double length;
     private final double width;

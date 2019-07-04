@@ -1,6 +1,6 @@
 package com.example.shapes;
 
-public class Triangle {
+public class Triangle implements Shape{
 
     private final double sideA;
     private final double sideB;
