@@ -12,6 +12,12 @@ public class Triangle implements Shape{
         this.sideC = sideC;
     }
 
+    public Triangle(double base, double equalSide){
+        this.sideA = base;
+        this.sideB = equalSide;
+        this.sideC = equalSide;
+    }
+
     private double perimeter() {
         return sideA + sideB + sideC;
     }
